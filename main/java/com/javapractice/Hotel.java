@@ -1,10 +1,12 @@
 package com.javapractice;
 
+import java.util.Arrays;
+
 public class Hotel{
     private String nameOfHotel;
-    private int rate;
+    private Integer[] rate;
 
-    public Hotel(String nameOfHotel, int rate) {
+    public Hotel(String nameOfHotel, Integer[] rate) {
         this.nameOfHotel = nameOfHotel;
         this.rate = rate;
     }
@@ -17,11 +19,11 @@ public class Hotel{
         this.nameOfHotel = nameOfHotel;
     }
 
-    public int getRate() {
+    public Integer[] getRate() {
         return rate;
     }
 
-    public void setRate(int rate) {
+    public void setRate(Integer[] rate) {
         this.rate = rate;
     }
 
@@ -29,7 +31,7 @@ public class Hotel{
     public String toString() {
         return "Hotel{" +
                 "nameOfHotel='" + nameOfHotel + '\'' +
-                ", rate=" + rate +
+                ", rate=" + Arrays.toString(rate) +
                 '}';
     }
 }
