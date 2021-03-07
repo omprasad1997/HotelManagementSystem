@@ -2,12 +2,12 @@ package com.javapractice;
 
 import java.util.Arrays;
 
-public class Hotel{
+public class Hotel {
     private String nameOfHotel;
     private Integer[] rate;
     private Integer rating;
 
-    public Hotel(String nameOfHotel, Integer[] rate,Integer rating) {
+    public Hotel(String nameOfHotel, Integer[] rate, Integer rating) {
         this.nameOfHotel = nameOfHotel;
         this.rate = rate;
         this.rating = rating;
@@ -31,10 +31,6 @@ public class Hotel{
 
     public Integer[] getRate() {
         return rate;
-    }
-
-    public void setRate(Integer[] rate) {
-        this.rate = rate;
     }
 
     @Override
