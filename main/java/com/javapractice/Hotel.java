@@ -5,10 +5,20 @@ import java.util.Arrays;
 public class Hotel{
     private String nameOfHotel;
     private Integer[] rate;
+    private int rating;
 
-    public Hotel(String nameOfHotel, Integer[] rate) {
+    public Hotel(String nameOfHotel, Integer[] rate,int rating) {
         this.nameOfHotel = nameOfHotel;
         this.rate = rate;
+        this.rating = rating;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 
     public String getNameOfHotel() {
@@ -32,6 +42,7 @@ public class Hotel{
         return "Hotel{" +
                 "nameOfHotel='" + nameOfHotel + '\'' +
                 ", rate=" + Arrays.toString(rate) +
+                ", rating=" + rating +
                 '}';
     }
 }
