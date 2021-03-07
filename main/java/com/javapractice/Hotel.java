@@ -36,7 +36,6 @@ public class Hotel{
     public void setRate(Integer[] rate) {
         this.rate = rate;
     }
-
     @Override
     public String toString() {
         return "Hotel{" +
@@ -44,6 +43,7 @@ public class Hotel{
                 ", rate=" + Arrays.toString(rate) +
                 ", rating=" + rating +
                 '}';
+
     }
 }
 
